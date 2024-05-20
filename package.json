@@ -1,0 +1,24 @@
+{
+  "name": "blockchain",
+  "module": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node_1": "bun --watch run src/network.js 3001 http://localhost:3001/api/v1",
+    "node_2": "bun  --watch run src/network.js 3002 http://localhost:3002/api/v1",
+    "node_3": "bun  --watch run src/network.js 3003 http://localhost:3003/api/v1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "sha256": "^0.2.0",
+    "uuid": "^9.0.1"
+  }
+}
